@@ -646,411 +646,411 @@ export const quizzes = {
             }
         ]
     }
-},
-geography: {
-    title: '🌍 Geography Quiz',
-    rounds: 1,
-    data: {
-        round1: [
-            {
-                question: 'What is the largest ocean on Earth?',
-                options: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
-                correct: 'Pacific Ocean'
             },
-            {
-                question: 'Which country has the largest population?',
-                options: ['India', 'China', 'USA', 'Indonesia'],
-                correct: 'China'
+            geography: {
+                title: '🌍 Geography Quiz',
+                rounds: 1,
+                data: {
+                    round1: [
+                        {
+                            question: 'What is the largest ocean on Earth?',
+                            options: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
+                            correct: 'Pacific Ocean'
+                        },
+                        {
+                            question: 'Which country has the largest population?',
+                            options: ['India', 'China', 'USA', 'Indonesia'],
+                            correct: 'China'
+                        },
+                        {
+                            question: 'Mount Everest is located on the border of Nepal and which country?',
+                            options: ['India', 'China', 'Bhutan', 'Pakistan'],
+                            correct: 'China'
+                        },
+                        {
+                            question: 'What is the capital of Australia?',
+                            options: ['Sydney', 'Melbourne', 'Canberra', 'Perth'],
+                            correct: 'Canberra'
+                        },
+                        {
+                            question: 'Which river is the longest in the world?',
+                            options: ['Amazon River', 'Nile River', 'Yangtze River', 'Mississippi River'],
+                            correct: 'Nile River'
+                        },
+                        {
+                            question: 'Which continent is the Sahara Desert located on?',
+                            options: ['Asia', 'Africa', 'Australia', 'South America'],
+                            correct: 'Africa'
+                        },
+                        {
+                            question: 'What is the smallest country in the world?',
+                            options: ['Monaco', 'Vatican City', 'San Marino', 'Liechtenstein'],
+                            correct: 'Vatican City'
+                        },
+                        {
+                            question: 'Which country is known as the Land of the Rising Sun?',
+                            options: ['China', 'Japan', 'South Korea', 'Thailand'],
+                            correct: 'Japan'
+                        },
+                        {
+                            question: 'What is the capital of Canada?',
+                            options: ['Toronto', 'Vancouver', 'Ottawa', 'Montreal'],
+                            correct: 'Ottawa'
+                        },
+                        {
+                            question: 'Which continent has the most countries?',
+                            options: ['Asia', 'Africa', 'Europe', 'South America'],
+                            correct: 'Africa'
+                        }
+                    ]
+                }
             },
-            {
-                question: 'Mount Everest is located on the border of Nepal and which country?',
-                options: ['India', 'China', 'Bhutan', 'Pakistan'],
-                correct: 'China'
+            history: {
+                title: '📜 History Quiz',
+                rounds: 1,
+                data: {
+                    round1: [
+                        {
+                            question: 'Who was the first President of the United States?',
+                            options: ['George Washington', 'Abraham Lincoln', 'John Adams', 'Thomas Jefferson'],
+                            correct: 'George Washington'
+                        },
+                        {
+                            question: 'In which year did World War II end?',
+                            options: ['1945', '1939', '1950', '1942'],
+                            correct: '1945'
+                        },
+                        {
+                            question: 'Which ancient civilization built the pyramids?',
+                            options: ['Romans', 'Greeks', 'Egyptians', 'Persians'],
+                            correct: 'Egyptians'
+                        },
+                        {
+                            question: 'Who discovered penicillin?',
+                            options: ['Alexander Fleming', 'Marie Curie', 'Isaac Newton', 'Albert Einstein'],
+                            correct: 'Alexander Fleming'
+                        },
+                        {
+                            question: 'The Great Wall of China was primarily built to protect against which group?',
+                            options: ['Mongols', 'Romans', 'Vikings', 'Ottomans'],
+                            correct: 'Mongols'
+                        },
+                        {
+                            question: 'Which empire was ruled by Genghis Khan?',
+                            options: ['Mongol Empire', 'Ottoman Empire', 'Roman Empire', 'Persian Empire'],
+                            correct: 'Mongol Empire'
+                        },
+                        {
+                            question: 'What ship famously sank in 1912?',
+                            options: ['Lusitania', 'Titanic', 'Britannic', 'Endeavour'],
+                            correct: 'Titanic'
+                        },
+                        {
+                            question: 'Who was known as the Maid of Orléans?',
+                            options: ['Joan of Arc', 'Cleopatra', 'Queen Victoria', 'Catherine the Great'],
+                            correct: 'Joan of Arc'
+                        },
+                        {
+                            question: 'Which war was fought between the North and South regions of the United States?',
+                            options: ['Civil War', 'Revolutionary War', 'Vietnam War', 'Korean War'],
+                            correct: 'Civil War'
+                        },
+                        {
+                            question: 'What ancient city was buried by the eruption of Mount Vesuvius?',
+                            options: ['Pompeii', 'Athens', 'Babylon', 'Troy'],
+                            correct: 'Pompeii'
+                        }
+                    ]
+                }
             },
-            {
-                question: 'What is the capital of Australia?',
-                options: ['Sydney', 'Melbourne', 'Canberra', 'Perth'],
-                correct: 'Canberra'
+            art: {
+                title: '🎨 Art Quiz',
+                rounds: 1,
+                data: {
+                    round1: [
+                        {
+                            question: 'Who painted the Mona Lisa?',
+                            options: ['Leonardo da Vinci', 'Michelangelo', 'Raphael', 'Van Gogh'],
+                            correct: 'Leonardo da Vinci'
+                        },
+                        {
+                            question: 'Which artist cut off part of his own ear?',
+                            options: ['Picasso', 'Van Gogh', 'Monet', 'Dali'],
+                            correct: 'Van Gogh'
+                        },
+                        {
+                            question: 'The Starry Night was painted by which artist?',
+                            options: ['Van Gogh', 'Monet', 'Cézanne', 'Matisse'],
+                            correct: 'Van Gogh'
+                        },
+                        {
+                            question: 'Which movement is Salvador Dalí associated with?',
+                            options: ['Surrealism', 'Cubism', 'Impressionism', 'Baroque'],
+                            correct: 'Surrealism'
+                        },
+                        {
+                            question: 'What is the art of paper folding called?',
+                            options: ['Origami', 'Kirigami', 'Calligraphy', 'Papercraft'],
+                            correct: 'Origami'
+                        },
+                        {
+                            question: 'Which artist is famous for the Campbell’s Soup Cans artwork?',
+                            options: ['Andy Warhol', 'Roy Lichtenstein', 'Keith Haring', 'Banksy'],
+                            correct: 'Andy Warhol'
+                        },
+                        {
+                            question: 'The Sistine Chapel ceiling was painted by?',
+                            options: ['Michelangelo', 'Da Vinci', 'Raphael', 'Caravaggio'],
+                            correct: 'Michelangelo'
+                        },
+                        {
+                            question: 'Which country is the Louvre Museum located in?',
+                            options: ['Italy', 'France', 'Spain', 'Germany'],
+                            correct: 'France'
+                        },
+                        {
+                            question: 'What is the term for a painting done on wet plaster?',
+                            options: ['Fresco', 'Mosaic', 'Etching', 'Tempera'],
+                            correct: 'Fresco'
+                        },
+                        {
+                            question: 'Which artist is known for the painting “The Persistence of Memory”?',
+                            options: ['Dalí', 'Picasso', 'Monet', 'Klimt'],
+                            correct: 'Dalí'
+                        }
+                    ]
+                }
             },
-            {
-                question: 'Which river is the longest in the world?',
-                options: ['Amazon River', 'Nile River', 'Yangtze River', 'Mississippi River'],
-                correct: 'Nile River'
+            sports: {
+                title: "🏅 Sports Quiz",
+                rounds: 1,
+                data: {
+                    round1: [
+                        {
+                            question: "Which country won the first FIFA World Cup in 1930?",
+                            options: ["Uruguay", "Brazil", "Argentina", "Italy"],
+                            correct: "Uruguay"
+                        },
+                        {
+                            question: "How many players are on a baseball team on the field at one time?",
+                            options: ["9", "7", "10", "11"],
+                            correct: "9"
+                        },
+                        {
+                            question: "In tennis, what piece of fruit is found at the top of the men's Wimbledon trophy?",
+                            options: ["Pineapple", "Apple", "Grape", "Pear"],
+                            correct: "Pineapple"
+                        },
+                        {
+                            question: "Which athlete has won the most Olympic gold medals?",
+                            options: ["Michael Phelps", "Usain Bolt", "Larisa Latynina", "Mark Spitz"],
+                            correct: "Michael Phelps"
+                        },
+                        {
+                            question: "What sport is known as the 'king of sports'?",
+                            options: ["Football", "Basketball", "Cricket", "Rugby"],
+                            correct: "Football"
+                        },
+                        {
+                            question: "Which NBA team did Michael Jordan play for the longest?",
+                            options: ["Chicago Bulls", "Washington Wizards", "Los Angeles Lakers", "Detroit Pistons"],
+                            correct: "Chicago Bulls"
+                        },
+                        {
+                            question: "In which sport would you perform a 'slam dunk'?",
+                            options: ["Basketball", "Volleyball", "Handball", "Rugby"],
+                            correct: "Basketball"
+                        },
+                        {
+                            question: "Which country hosts the Tour de France?",
+                            options: ["France", "Italy", "Spain", "Belgium"],
+                            correct: "France"
+                        },
+                        {
+                            question: "What is the maximum score in a single frame of bowling?",
+                            options: ["30", "20", "40", "50"],
+                            correct: "30"
+                        },
+                        {
+                            question: "Which sport uses terms like 'birdie', 'eagle', and 'bogey'?",
+                            options: ["Golf", "Tennis", "Badminton", "Cricket"],
+                            correct: "Golf"
+                        }
+                    ]
+                }
             },
-            {
-                question: 'Which continent is the Sahara Desert located on?',
-                options: ['Asia', 'Africa', 'Australia', 'South America'],
-                correct: 'Africa'
+            politics: {
+                title: '🏛️ Politics Quiz',
+                rounds: 1,
+                data: {
+                    round1: [
+                        {
+                            question: 'What is the term for a system where citizens vote for their leaders?',
+                            options: ['Monarchy', 'Dictatorship', 'Democracy', 'Oligarchy'],
+                            correct: 'Democracy'
+                        },
+                        {
+                            question: 'Which organization is headquartered in New York and promotes international cooperation?',
+                            options: ['UN', 'NATO', 'EU', 'WHO'],
+                            correct: 'UN'
+                        },
+                        {
+                            question: 'What is the highest court in the United States?',
+                            options: ['Supreme Court', 'Federal Court', 'Congress', 'Senate'],
+                            correct: 'Supreme Court'
+                        },
+                        {
+                            question: 'What is the term length for a U.S. President?',
+                            options: ['2 years', '4 years', '6 years', '8 years'],
+                            correct: '4 years'
+                        },
+                        {
+                            question: 'Which ancient civilization invented democracy?',
+                            options: ['Romans', 'Greeks', 'Egyptians', 'Persians'],
+                            correct: 'Greeks'
+                        },
+                        {
+                            question: 'What is the name of the UK’s parliament building?',
+                            options: ['Buckingham Palace', '10 Downing Street', 'Houses of Parliament', 'Westminster Abbey'],
+                            correct: 'Houses of Parliament'
+                        },
+                        {
+                            question: 'Which political ideology advocates for government ownership of industry?',
+                            options: ['Capitalism', 'Socialism', 'Libertarianism', 'Conservatism'],
+                            correct: 'Socialism'
+                        },
+                        {
+                            question: 'What is the term for a law proposed in parliament?',
+                            options: ['Act', 'Bill', 'Motion', 'Amendment'],
+                            correct: 'Bill'
+                        },
+                        {
+                            question: 'Which country has the world’s largest democracy?',
+                            options: ['USA', 'India', 'Brazil', 'Japan'],
+                            correct: 'India'
+                        },
+                        {
+                            question: 'What is the term for the leader of a city government?',
+                            options: ['Governor', 'Mayor', 'Senator', 'Chancellor'],
+                            correct: 'Mayor'
+                        }
+                    ]
+                }
             },
-            {
-                question: 'What is the smallest country in the world?',
-                options: ['Monaco', 'Vatican City', 'San Marino', 'Liechtenstein'],
-                correct: 'Vatican City'
+            celebrities: {
+                title: '⭐ Celebrities Quiz',
+                rounds: 1,
+                data: {
+                    round1: [
+                        {
+                            question: 'Which actor played Iron Man in the Marvel Cinematic Universe?',
+                            options: ['Chris Evans', 'Robert Downey Jr.', 'Chris Hemsworth', 'Mark Ruffalo'],
+                            correct: 'Robert Downey Jr.'
+                        },
+                        {
+                            question: 'Who is known as the “King of Pop”?',
+                            options: ['Elvis Presley', 'Michael Jackson', 'Prince', 'Justin Timberlake'],
+                            correct: 'Michael Jackson'
+                        },
+                        {
+                            question: 'Which actress starred in “Pretty Woman”?',
+                            options: ['Julia Roberts', 'Sandra Bullock', 'Nicole Kidman', 'Meryl Streep'],
+                            correct: 'Julia Roberts'
+                        },
+                        {
+                            question: 'Which singer released the album “1989”?',
+                            options: ['Adele', 'Taylor Swift', 'Katy Perry', 'Lady Gaga'],
+                            correct: 'Taylor Swift'
+                        },
+                        {
+                            question: 'Who played Jack in the movie Titanic?',
+                            options: ['Brad Pitt', 'Leonardo DiCaprio', 'Tom Cruise', 'Matt Damon'],
+                            correct: 'Leonardo DiCaprio'
+                        },
+                        {
+                            question: 'Which celebrity is known for the catchphrase “You’re fired”?',
+                            options: ['Simon Cowell', 'Donald Trump', 'Gordon Ramsay', 'Steve Jobs'],
+                            correct: 'Donald Trump'
+                        },
+                        {
+                            question: 'Which actor voiced Woody in Toy Story?',
+                            options: ['Tom Hanks', 'Tim Allen', 'Robin Williams', 'Jim Carrey'],
+                            correct: 'Tom Hanks'
+                        },
+                        {
+                            question: 'Who is the lead singer of U2?',
+                            options: ['Bono', 'Sting', 'Freddie Mercury', 'Mick Jagger'],
+                            correct: 'Bono'
+                        },
+                        {
+                            question: 'Which actress played Hermione in the Harry Potter films?',
+                            options: ['Emma Stone', 'Emma Watson', 'Keira Knightley', 'Anne Hathaway'],
+                            correct: 'Emma Watson'
+                        },
+                        {
+                            question: 'Which celebrity chef is famous for shouting in the kitchen?',
+                            options: ['Jamie Oliver', 'Gordon Ramsay', 'Wolfgang Puck', 'Anthony Bourdain'],
+                            correct: 'Gordon Ramsay'
+                        }
+                    ]
+                }
             },
-            {
-                question: 'Which country is known as the Land of the Rising Sun?',
-                options: ['China', 'Japan', 'South Korea', 'Thailand'],
-                correct: 'Japan'
+            animals: {
+                title: '🐾 Animals Quiz',
+                rounds: 1,
+                data: {
+                    round1: [
+                        {
+                            question: 'What is the fastest land animal?',
+                            options: ['Cheetah', 'Lion', 'Horse', 'Greyhound'],
+                            correct: 'Cheetah'
+                        },
+                        {
+                            question: 'Which animal is known as the King of the Jungle?',
+                            options: ['Tiger', 'Lion', 'Leopard', 'Jaguar'],
+                            correct: 'Lion'
+                        },
+                        {
+                            question: 'What is the largest mammal in the world?',
+                            options: ['Elephant', 'Blue Whale', 'Giraffe', 'Hippopotamus'],
+                            correct: 'Blue Whale'
+                        },
+                        {
+                            question: 'Which bird is known for its colorful tail feathers?',
+                            options: ['Peacock', 'Flamingo', 'Parrot', 'Eagle'],
+                            correct: 'Peacock'
+                        },
+                        {
+                            question: 'What do pandas primarily eat?',
+                            options: ['Fish', 'Bamboo', 'Grass', 'Insects'],
+                            correct: 'Bamboo'
+                        },
+                        {
+                            question: 'Which animal can change its color to blend in?',
+                            options: ['Chameleon', 'Frog', 'Snake', 'Lizard'],
+                            correct: 'Chameleon'
+                        },
+                        {
+                            question: 'What is the tallest land animal?',
+                            options: ['Elephant', 'Giraffe', 'Camel', 'Moose'],
+                            correct: 'Giraffe'
+                        },
+                        {
+                            question: 'Which animal is known for its black and white stripes?',
+                            options: ['Tiger', 'Zebra', 'Skunk', 'Panda'],
+                            correct: 'Zebra'
+                        },
+                        {
+                            question: 'What is a baby kangaroo called?',
+                            options: ['Cub', 'Joey', 'Calf', 'Pup'],
+                            correct: 'Joey'
+                        },
+                        {
+                            question: 'Which sea creature has eight arms?',
+                            options: ['Octopus', 'Squid', 'Crab', 'Starfish'],
+                            correct: 'Octopus'
+                        }
+                    ]
+                }
             },
-            {
-                question: 'What is the capital of Canada?',
-                options: ['Toronto', 'Vancouver', 'Ottawa', 'Montreal'],
-                correct: 'Ottawa'
-            },
-            {
-                question: 'Which continent has the most countries?',
-                options: ['Asia', 'Africa', 'Europe', 'South America'],
-                correct: 'Africa'
-            }
-        ]
-    }
-},
-history: {
-    title: '📜 History Quiz',
-    rounds: 1,
-    data: {
-        round1: [
-            {
-                question: 'Who was the first President of the United States?',
-                options: ['George Washington', 'Abraham Lincoln', 'John Adams', 'Thomas Jefferson'],
-                correct: 'George Washington'
-            },
-            {
-                question: 'In which year did World War II end?',
-                options: ['1945', '1939', '1950', '1942'],
-                correct: '1945'
-            },
-            {
-                question: 'Which ancient civilization built the pyramids?',
-                options: ['Romans', 'Greeks', 'Egyptians', 'Persians'],
-                correct: 'Egyptians'
-            },
-            {
-                question: 'Who discovered penicillin?',
-                options: ['Alexander Fleming', 'Marie Curie', 'Isaac Newton', 'Albert Einstein'],
-                correct: 'Alexander Fleming'
-            },
-            {
-                question: 'The Great Wall of China was primarily built to protect against which group?',
-                options: ['Mongols', 'Romans', 'Vikings', 'Ottomans'],
-                correct: 'Mongols'
-            },
-            {
-                question: 'Which empire was ruled by Genghis Khan?',
-                options: ['Mongol Empire', 'Ottoman Empire', 'Roman Empire', 'Persian Empire'],
-                correct: 'Mongol Empire'
-            },
-            {
-                question: 'What ship famously sank in 1912?',
-                options: ['Lusitania', 'Titanic', 'Britannic', 'Endeavour'],
-                correct: 'Titanic'
-            },
-            {
-                question: 'Who was known as the Maid of Orléans?',
-                options: ['Joan of Arc', 'Cleopatra', 'Queen Victoria', 'Catherine the Great'],
-                correct: 'Joan of Arc'
-            },
-            {
-                question: 'Which war was fought between the North and South regions of the United States?',
-                options: ['Civil War', 'Revolutionary War', 'Vietnam War', 'Korean War'],
-                correct: 'Civil War'
-            },
-            {
-                question: 'What ancient city was buried by the eruption of Mount Vesuvius?',
-                options: ['Pompeii', 'Athens', 'Babylon', 'Troy'],
-                correct: 'Pompeii'
-            }
-        ]
-    }
-},
-art: {
-    title: '🎨 Art Quiz',
-    rounds: 1,
-    data: {
-        round1: [
-            {
-                question: 'Who painted the Mona Lisa?',
-                options: ['Leonardo da Vinci', 'Michelangelo', 'Raphael', 'Van Gogh'],
-                correct: 'Leonardo da Vinci'
-            },
-            {
-                question: 'Which artist cut off part of his own ear?',
-                options: ['Picasso', 'Van Gogh', 'Monet', 'Dali'],
-                correct: 'Van Gogh'
-            },
-            {
-                question: 'The Starry Night was painted by which artist?',
-                options: ['Van Gogh', 'Monet', 'Cézanne', 'Matisse'],
-                correct: 'Van Gogh'
-            },
-            {
-                question: 'Which movement is Salvador Dalí associated with?',
-                options: ['Surrealism', 'Cubism', 'Impressionism', 'Baroque'],
-                correct: 'Surrealism'
-            },
-            {
-                question: 'What is the art of paper folding called?',
-                options: ['Origami', 'Kirigami', 'Calligraphy', 'Papercraft'],
-                correct: 'Origami'
-            },
-            {
-                question: 'Which artist is famous for the Campbell’s Soup Cans artwork?',
-                options: ['Andy Warhol', 'Roy Lichtenstein', 'Keith Haring', 'Banksy'],
-                correct: 'Andy Warhol'
-            },
-            {
-                question: 'The Sistine Chapel ceiling was painted by?',
-                options: ['Michelangelo', 'Da Vinci', 'Raphael', 'Caravaggio'],
-                correct: 'Michelangelo'
-            },
-            {
-                question: 'Which country is the Louvre Museum located in?',
-                options: ['Italy', 'France', 'Spain', 'Germany'],
-                correct: 'France'
-            },
-            {
-                question: 'What is the term for a painting done on wet plaster?',
-                options: ['Fresco', 'Mosaic', 'Etching', 'Tempera'],
-                correct: 'Fresco'
-            },
-            {
-                question: 'Which artist is known for the painting “The Persistence of Memory”?',
-                options: ['Dalí', 'Picasso', 'Monet', 'Klimt'],
-                correct: 'Dalí'
-            }
-        ]
-    }
-},
-art: {
-    title: '🎨 Art Quiz',
-    rounds: 1,
-    data: {
-        round1: [
-            {
-                question: 'Who painted the Mona Lisa?',
-                options: ['Leonardo da Vinci', 'Michelangelo', 'Raphael', 'Van Gogh'],
-                correct: 'Leonardo da Vinci'
-            },
-            {
-                question: 'Which artist cut off part of his own ear?',
-                options: ['Picasso', 'Van Gogh', 'Monet', 'Dali'],
-                correct: 'Van Gogh'
-            },
-            {
-                question: 'The Starry Night was painted by which artist?',
-                options: ['Van Gogh', 'Monet', 'Cézanne', 'Matisse'],
-                correct: 'Van Gogh'
-            },
-            {
-                question: 'Which movement is Salvador Dalí associated with?',
-                options: ['Surrealism', 'Cubism', 'Impressionism', 'Baroque'],
-                correct: 'Surrealism'
-            },
-            {
-                question: 'What is the art of paper folding called?',
-                options: ['Origami', 'Kirigami', 'Calligraphy', 'Papercraft'],
-                correct: 'Origami'
-            },
-            {
-                question: 'Which artist is famous for the Campbell’s Soup Cans artwork?',
-                options: ['Andy Warhol', 'Roy Lichtenstein', 'Keith Haring', 'Banksy'],
-                correct: 'Andy Warhol'
-            },
-            {
-                question: 'The Sistine Chapel ceiling was painted by?',
-                options: ['Michelangelo', 'Da Vinci', 'Raphael', 'Caravaggio'],
-                correct: 'Michelangelo'
-            },
-            {
-                question: 'Which country is the Louvre Museum located in?',
-                options: ['Italy', 'France', 'Spain', 'Germany'],
-                correct: 'France'
-            },
-            {
-                question: 'What is the term for a painting done on wet plaster?',
-                options: ['Fresco', 'Mosaic', 'Etching', 'Tempera'],
-                correct: 'Fresco'
-            },
-            {
-                question: 'Which artist is known for the painting “The Persistence of Memory”?',
-                options: ['Dalí', 'Picasso', 'Monet', 'Klimt'],
-                correct: 'Dalí'
-            }
-        ]
-    }
-},
-politics: {
-    title: '🏛️ Politics Quiz',
-    rounds: 1,
-    data: {
-        round1: [
-            {
-                question: 'What is the term for a system where citizens vote for their leaders?',
-                options: ['Monarchy', 'Dictatorship', 'Democracy', 'Oligarchy'],
-                correct: 'Democracy'
-            },
-            {
-                question: 'Which organization is headquartered in New York and promotes international cooperation?',
-                options: ['UN', 'NATO', 'EU', 'WHO'],
-                correct: 'UN'
-            },
-            {
-                question: 'What is the highest court in the United States?',
-                options: ['Supreme Court', 'Federal Court', 'Congress', 'Senate'],
-                correct: 'Supreme Court'
-            },
-            {
-                question: 'What is the term length for a U.S. President?',
-                options: ['2 years', '4 years', '6 years', '8 years'],
-                correct: '4 years'
-            },
-            {
-                question: 'Which ancient civilization invented democracy?',
-                options: ['Romans', 'Greeks', 'Egyptians', 'Persians'],
-                correct: 'Greeks'
-            },
-            {
-                question: 'What is the name of the UK’s parliament building?',
-                options: ['Buckingham Palace', '10 Downing Street', 'Houses of Parliament', 'Westminster Abbey'],
-                correct: 'Houses of Parliament'
-            },
-            {
-                question: 'Which political ideology advocates for government ownership of industry?',
-                options: ['Capitalism', 'Socialism', 'Libertarianism', 'Conservatism'],
-                correct: 'Socialism'
-            },
-            {
-                question: 'What is the term for a law proposed in parliament?',
-                options: ['Act', 'Bill', 'Motion', 'Amendment'],
-                correct: 'Bill'
-            },
-            {
-                question: 'Which country has the world’s largest democracy?',
-                options: ['USA', 'India', 'Brazil', 'Japan'],
-                correct: 'India'
-            },
-            {
-                question: 'What is the term for the leader of a city government?',
-                options: ['Governor', 'Mayor', 'Senator', 'Chancellor'],
-                correct: 'Mayor'
-            }
-        ]
-    }
-},
-celebrities: {
-    title: '⭐ Celebrities Quiz',
-    rounds: 1,
-    data: {
-        round1: [
-            {
-                question: 'Which actor played Iron Man in the Marvel Cinematic Universe?',
-                options: ['Chris Evans', 'Robert Downey Jr.', 'Chris Hemsworth', 'Mark Ruffalo'],
-                correct: 'Robert Downey Jr.'
-            },
-            {
-                question: 'Who is known as the “King of Pop”?',
-                options: ['Elvis Presley', 'Michael Jackson', 'Prince', 'Justin Timberlake'],
-                correct: 'Michael Jackson'
-            },
-            {
-                question: 'Which actress starred in “Pretty Woman”?',
-                options: ['Julia Roberts', 'Sandra Bullock', 'Nicole Kidman', 'Meryl Streep'],
-                correct: 'Julia Roberts'
-            },
-            {
-                question: 'Which singer released the album “1989”?',
-                options: ['Adele', 'Taylor Swift', 'Katy Perry', 'Lady Gaga'],
-                correct: 'Taylor Swift'
-            },
-            {
-                question: 'Who played Jack in the movie Titanic?',
-                options: ['Brad Pitt', 'Leonardo DiCaprio', 'Tom Cruise', 'Matt Damon'],
-                correct: 'Leonardo DiCaprio'
-            },
-            {
-                question: 'Which celebrity is known for the catchphrase “You’re fired”?',
-                options: ['Simon Cowell', 'Donald Trump', 'Gordon Ramsay', 'Steve Jobs'],
-                correct: 'Donald Trump'
-            },
-            {
-                question: 'Which actor voiced Woody in Toy Story?',
-                options: ['Tom Hanks', 'Tim Allen', 'Robin Williams', 'Jim Carrey'],
-                correct: 'Tom Hanks'
-            },
-            {
-                question: 'Who is the lead singer of U2?',
-                options: ['Bono', 'Sting', 'Freddie Mercury', 'Mick Jagger'],
-                correct: 'Bono'
-            },
-            {
-                question: 'Which actress played Hermione in the Harry Potter films?',
-                options: ['Emma Stone', 'Emma Watson', 'Keira Knightley', 'Anne Hathaway'],
-                correct: 'Emma Watson'
-            },
-            {
-                question: 'Which celebrity chef is famous for shouting in the kitchen?',
-                options: ['Jamie Oliver', 'Gordon Ramsay', 'Wolfgang Puck', 'Anthony Bourdain'],
-                correct: 'Gordon Ramsay'
-            }
-        ]
-    }
-},
-animals: {
-    title: '🐾 Animals Quiz',
-    rounds: 1,
-    data: {
-        round1: [
-            {
-                question: 'What is the fastest land animal?',
-                options: ['Cheetah', 'Lion', 'Horse', 'Greyhound'],
-                correct: 'Cheetah'
-            },
-            {
-                question: 'Which animal is known as the King of the Jungle?',
-                options: ['Tiger', 'Lion', 'Leopard', 'Jaguar'],
-                correct: 'Lion'
-            },
-            {
-                question: 'What is the largest mammal in the world?',
-                options: ['Elephant', 'Blue Whale', 'Giraffe', 'Hippopotamus'],
-                correct: 'Blue Whale'
-            },
-            {
-                question: 'Which bird is known for its colorful tail feathers?',
-                options: ['Peacock', 'Flamingo', 'Parrot', 'Eagle'],
-                correct: 'Peacock'
-            },
-            {
-                question: 'What do pandas primarily eat?',
-                options: ['Fish', 'Bamboo', 'Grass', 'Insects'],
-                correct: 'Bamboo'
-            },
-            {
-                question: 'Which animal can change its color to blend in?',
-                options: ['Chameleon', 'Frog', 'Snake', 'Lizard'],
-                correct: 'Chameleon'
-            },
-            {
-                question: 'What is the tallest land animal?',
-                options: ['Elephant', 'Giraffe', 'Camel', 'Moose'],
-                correct: 'Giraffe'
-            },
-            {
-                question: 'Which animal is known for its black and white stripes?',
-                options: ['Tiger', 'Zebra', 'Skunk', 'Panda'],
-                correct: 'Zebra'
-            },
-            {
-                question: 'What is a baby kangaroo called?',
-                options: ['Cub', 'Joey', 'Calf', 'Pup'],
-                correct: 'Joey'
-            },
-            {
-                question: 'Which sea creature has eight arms?',
-                options: ['Octopus', 'Squid', 'Crab', 'Starfish'],
-                correct: 'Octopus'
-            }
-        ]
-    }
-},
 };
