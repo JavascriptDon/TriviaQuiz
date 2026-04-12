@@ -171,6 +171,29 @@ import { quizzes } from './quiz.js';
     location.reload();
 }
 
+function playSound() {
+  const clickSound = new Audio("/sounds/mouse-click.mp3");
+
+  function attachListeners() {
+    const optionButtons = document.querySelectorAll(".option-btn");
+
+    optionButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+      });
+    });
+  }
+  // Attach immediately
+  attachListeners();
+
+  // Re‑attach whenever new buttons appear
+  const observer = new MutationObserver(attachListeners);
+  observer.observe(document.getElementById("options-container"), {
+    childList: true,
+    subtree: true
+  });
+}
         function showFinalScore() {
             document.getElementById('quiz-section').classList.add('hidden');
             document.getElementById('round-complete-section').classList.add('hidden');
@@ -210,7 +233,7 @@ import { quizzes } from './quiz.js';
 
         // Start the quiz selection
         initializeQuiz();
-
+        playSound();
         // Add event listener for start button
         document.getElementById('start-quiz-btn').addEventListener('click', startSelectedQuiz);
 
