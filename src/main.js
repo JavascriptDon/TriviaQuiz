@@ -171,29 +171,36 @@ import { quizzes } from './quiz.js';
     location.reload();
 }
 
-function playSound() {
-  const clickSound = new Audio("/sounds/mouse-click.mp3");
 
-  function attachListeners() {
-    const optionButtons = document.querySelectorAll(".option-btn");
+        function playSound() {
+        const clickSound = new Audio("/mouse-click.mp3");
 
-    optionButtons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        clickSound.currentTime = 0;
-        clickSound.play();
-      });
-    });
-  }
-  // Attach immediately
-  attachListeners();
+        function playClick() {
+            clickSound.currentTime = 0;
+            clickSound.play();
+        }
 
-  // Re‑attach whenever new buttons appear
-  const observer = new MutationObserver(attachListeners);
-  observer.observe(document.getElementById("options-container"), {
-    childList: true,
-    subtree: true
-  });
-}
+        function attachListeners() {
+            const clickableButtons = document.querySelectorAll(
+            ".option-btn, .back-btn, .continue-btn, .restart-btn"
+            );
+
+            clickableButtons.forEach(btn => {
+            btn.removeEventListener("click", playClick);
+            btn.addEventListener("click", playClick);
+            });
+        }
+
+        // Attach to static buttons (header, continue, restart)
+        attachListeners();
+
+        // Re-attach to dynamic option buttons
+        const observer = new MutationObserver(attachListeners);
+        observer.observe(document.getElementById("options-container"), {
+            childList: true,
+            subtree: true
+        });
+        }
         function showFinalScore() {
             document.getElementById('quiz-section').classList.add('hidden');
             document.getElementById('round-complete-section').classList.add('hidden');
