@@ -170,10 +170,8 @@ import { quizzes } from './quiz.js';
     // Optional: reload the page to fully reset everything
     location.reload();
 }
-
-
         function playSound() {
-        const clickSound = new Audio("/mouse-click.mp3");
+        const clickSound = new Audio("/sounds/mouse-click.mp3");
 
         function playClick() {
             clickSound.currentTime = 0;
@@ -200,7 +198,8 @@ import { quizzes } from './quiz.js';
             childList: true,
             subtree: true
         });
-        }
+        };
+        
         function showFinalScore() {
             document.getElementById('quiz-section').classList.add('hidden');
             document.getElementById('round-complete-section').classList.add('hidden');
