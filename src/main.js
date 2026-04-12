@@ -1,5 +1,5 @@
 import { quizzes } from './quiz.js';
-
+import clickSound from './sounds/mouse-click.mp3';
         let currentRound = 1;
         let currentQuestionIndex = 0;
         let totalScore = 0;
@@ -171,11 +171,11 @@ import { quizzes } from './quiz.js';
     location.reload();
 }
         function playSound() {
-        const clickSound = new Audio("/sounds/mouse-click.mp3");
+        const clickSounds = new Audio(clickSound);
 
         function playClick() {
-            clickSound.currentTime = 0;
-            clickSound.play();
+            clickSounds.currentTime = 0;
+            clickSounds.play();
         }
 
         function attachListeners() {
@@ -199,7 +199,7 @@ import { quizzes } from './quiz.js';
             subtree: true
         });
         };
-        
+
         function showFinalScore() {
             document.getElementById('quiz-section').classList.add('hidden');
             document.getElementById('round-complete-section').classList.add('hidden');
