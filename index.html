@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia</title>
+  <link rel="stylesheet" href="./src/style.css" />
+  <script type="module" src="./src/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="quiz-selection" class="quiz-selection">
+      <h1>Trivia Quiz Selector</h1>
+      <p>Select the type of trivia quiz you want to take:</p>
+      <select id="quiz-type-select">
+        <option value="uk">🇬🇧 UK Trivia Quiz (5 rounds)</option>
+        <option value="dc">🦸 DC-Universe-quiz (3 rounds)</option>
+        <option value="movie">🦸 Move-Trivia-Quiz (3 rounds)</option>
+        <option value="history">📜 History Quiz (1 round)</option>
+        <option value="geography">🌍 Geography Quiz (1 round)</option>
+        <option value="mythology">⚡ Mythology Quiz (1 round)</option>
+        <option value="art">🎨 Art Quiz (1 round)</option>
+        <option value="sports">⚽ Sports Quiz (1 round)</option>
+        <option value="politics">🏛️ Politics Quiz (1 round)</option>
+        <option value="celebrities">⭐ Celebrities Quiz (1 round)</option>
+        <option value="animals">🐾 Animals Quiz (1 round)</option>
+      </select>
+      <button id="start-quiz-btn" class="start-btn" onclick="startSelectedQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+      <div class="header">
+        <div class="header-top">
+          <button id="back-to-selection-btn" class="back-btn" onclick="goBackToSelection()">Change Quiz</button>
+          <h1 id="quiz-title">🇬🇧 UK Trivia Quiz</h1>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="progress-text"><span id="current-question">1</span> of <span id="total-questions">10</span></div>
+
+
+        <div class="round-indicator">Round <span id="current-round">1</span> of <span id="total-rounds">5</span></div>
+      </div>
+
+      <div class="content">
+        <div id="quiz-section" class="question-card">
+          <div class="question-text" id="question"></div>
+          <div class="options-container" id="options-container"></div>
+          <div id="feedback" class="hidden"></div>
+        </div>
+
+        <div id="round-complete-section" class="score-screen hidden">
+          <h2>Round <span id="round-number">1</span> Complete! 🎉</h2>
+          <div class="score-display"><span id="round-score">0</span>/10</div>
+
+          <div class="score-text" id="round-percentage">0%</div>
+          <button class="continue-btn" onclick="startNextRound()">Continue to Round <span
+              id="next-round-num">2</span></button>
+
+        </div>
+
+        <div id="final-score-section" class="score-screen hidden">
+          <h2>Quiz Complete! 🎉</h2>
+          <div class="score-display"><span id="final-score">0</span>/<span id="final-total">50</span></div>
+
+          <div class="score-text" id="final-percentage">0%</div>
+          <div class="score-message" id="score-message"></div>
+          <div class="round-breakdown">
+            <h3>📊 Round Breakdown:</h3>
+            <p>Round 1: <span id="final-round1">0</span>/10</p>
+            <p>Round 2: <span id="final-round2">0</span>/10</p>
+            <p>Round 3: <span id="final-round3">0</span>/10</p>
+            <p>Round 4: <span id="final-round4">0</span>/10</p>
+            <p>Round 5: <span id="final-round5">0</span>/10</p>
+          </div>
+          <button class="restart-btn" onclick="location.reload()">Take Quiz Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
