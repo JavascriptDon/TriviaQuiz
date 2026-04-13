@@ -2,6 +2,7 @@ import { quizzes } from './quiz.js';
 import clickSound from './sounds/mouse-click.mp3';
         let currentRound = 1;
         let currentQuestionIndex = 0;
+        let roundStartScore = 0;
         let totalScore = 0;
         let roundScores = {};
         let quizQuestions = [];
@@ -41,6 +42,8 @@ import clickSound from './sounds/mouse-click.mp3';
             const roundKey = `round${roundNumber}`;
             quizQuestions = shuffleArray([...quizzes[selectedQuiz].data[roundKey]]);
             currentQuestionIndex = 0;
+            // mark the score at the start of this round
+            roundStartScore = totalScore;
             document.getElementById('current-round').textContent = roundNumber;
             document.getElementById('total-questions').textContent = '10';
             displayQuestion();
@@ -134,15 +137,17 @@ import clickSound from './sounds/mouse-click.mp3';
         }
 
         function completeRound() {
-            const baseScore = (currentRound - 1) * 10;
-            const roundScore = totalScore - baseScore;
+            const roundScore = totalScore - roundStartScore; // score earned this round
             roundScores[currentRound] = roundScore;
 
             document.getElementById('quiz-section').classList.add('hidden');
             document.getElementById('round-complete-section').classList.remove('hidden');
             document.getElementById('round-number').textContent = currentRound;
             document.getElementById('round-score').textContent = roundScore;
-            document.getElementById('round-percentage').textContent = Math.round((roundScore / 10) * 100) + '%';
+            const maxQuestions = quizQuestions.length;
+            const roundPercent = Math.round((roundScore / maxQuestions) * 100);
+            
+            document.getElementById('round-percentage').textContent = roundPercent + '%';
 
             if (currentRound < 5) {
                 document.getElementById('next-round-num').textContent = currentRound + 1;
