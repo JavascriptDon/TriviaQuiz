@@ -591,7 +591,7 @@ export const quizzes = {
             },
             mythology: {
     title: '⚡ Mythology Quiz',
-    rounds: 1,
+    rounds: 2,
     data: {
         round1: [
             {
@@ -644,7 +644,59 @@ export const quizzes = {
                 options: ['Aphrodite', 'Hera', 'Athena', 'Artemis'],
                 correct: 'Athena'
             }
-        ]
+        ],
+         [
+            {
+                question: 'In Greek mythology, who is the king of the underworld?',
+                options: ['Hades', 'Zeus', 'Ares', 'Cronus'],
+                correct: 'Hades'
+            },
+            {
+                question: 'What is the name of the winged horse in Greek mythology?',
+                options: ['Pegasus', 'Chimera', 'Hydra', 'Cerberus'],
+                correct: 'Pegasus'
+            },
+            {
+                question: 'In Norse mythology, what is the name of the world tree?',
+                options: ['Asgard', 'Yggdrasil', 'Valhalla', 'Midgard'],
+                correct: 'Yggdrasil'
+            },
+            {
+                question: 'Who is the Hindu god known as the destroyer?',
+                options: ['Vishnu', 'Shiva', 'Brahma', 'Indra'],
+                correct: 'Shiva'
+            },
+            {
+                question: 'What Greek hero completed the Twelve Labors?',
+                options: ['Hercules', 'Theseus', 'Jason', 'Perseus'],
+                correct: 'Hercules'
+            },
+            {
+                question: 'Which Egyptian goddess has the head of a lioness?',
+                options: ['Isis', 'Sekhmet', 'Bastet', 'Nephthys'],
+                correct: 'Sekhmet'
+            },
+            {
+               question: 'In Roman mythology, who is the god of war?',
+               options: ['Mars', 'Mercury', 'Jupiter', 'Vulcan'],
+               correct: 'Mars'
+            },
+            {
+              question: 'What creature guards the entrance to the underworld in Greek mythology?',
+              options: ['Cerberus', 'Hydra', 'Sphinx', 'Chimera'],
+              correct: 'Cerberus'
+            },
+            {
+             question: 'In Japanese mythology, what is Amaterasu the goddess of?',
+             options: ['War', 'The Sun', 'Storms', 'The Moon'],
+             correct: 'The Sun'
+            },
+            {
+             question: 'Which mythical creature is known for luring sailors with its voice?',
+             options: ['Siren', 'Harpy', 'Nymph', 'Dryad'],
+             correct: 'Siren'
+            }
+         ],
     }
             },
             geography: {
