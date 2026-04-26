@@ -933,7 +933,7 @@ export const quizzes = {
             },
             politics: {
                 title: '🏛️ Politics Quiz',
-                rounds: 1,
+                rounds: 3,
                 data: {
                     round1: [
                         {
@@ -986,7 +986,111 @@ export const quizzes = {
                             options: ['Governor', 'Mayor', 'Senator', 'Chancellor'],
                             correct: 'Mayor'
                         }
-                    ]
+                    ],
+                    round2: [
+                        {
+                            "question": "What is the term for a government ruled by a king or queen?",
+                            "options": ["Republic", "Monarchy", "Democracy", "Theocracy"],
+                            "correct": "Monarchy"
+                        },
+                        {
+                            "question": "Which political system divides power between national and regional governments?",
+                            "options": ["Unitary system", "Federal system", "Confederation", "Autocracy"],
+                            "correct": "Federal system"
+                        },
+                        {
+                            "question": "What is the main purpose of a constitution?",
+                            "options": ["To collect taxes", "To outline government structure", "To elect leaders", "To enforce religion"],
+                            "correct": "To outline government structure"
+                        },
+                        {
+                            "question": "Which body is responsible for making laws in the United States?",
+                            "options": ["Congress", "Supreme Court", "Cabinet", "Pentagon"],
+                            "correct": "Congress"
+                        },
+                        {
+                            "question": "What is the term for a political belief favoring limited government and free markets?",
+                            "options": ["Liberalism", "Conservatism", "Socialism", "Authoritarianism"],
+                            "correct": "Conservatism"
+                        },
+                        {
+                            "question": "Which international organization focuses on global health?",
+                            "options": ["UNESCO", "WHO", "IMF", "WTO"],
+                            "correct": "WHO"
+                        },
+                        {
+                            "question": "What is the term for the right to vote?",
+                            "options": ["Sovereignty", "Suffrage", "Mandate", "Jurisdiction"],
+                            "correct": "Suffrage"
+                        },
+                        {
+                            "question": "Which branch of government is responsible for interpreting laws?",
+                            "options": ["Executive", "Legislative", "Judicial", "Administrative"],
+                            "correct": "Judicial"
+                        },
+                        {
+                            "question": "What is the term for a political system where one party controls the government?",
+                            "options": ["Multi-party system", "One-party system", "Coalition government", "Bipartisan system"],
+                            "correct": "One-party system"
+                        },
+                         {
+                            "question": "Which country is known for having a parliamentary system with a Prime Minister?",
+                            "options": ["United States", "France", "United Kingdom", "China"],
+                            "correct": "United Kingdom"
+                         }
+                  ],
+                  round3: [
+                          {
+                                 "question": "What term describes a system in which power is divided between a central authority and constituent political units?",
+                                 "options": ["Confederalism", "Federalism", "Unitary governance", "Technocracy"],
+                                 "correct": "Federalism"
+                          },
+                          {
+                                 "question": "Which political theory argues that political power is distributed among many competing groups, preventing dominance by any single elite?",
+                                 "options": ["Pluralism", "Elitism", "Marxism", "Authoritarianism"],
+                                 "correct": "Pluralism"
+                          },
+                          {
+                                 "question": "Which treaty established the modern European Union and introduced the euro?",
+                                 "options": ["Treaty of Rome", "Maastricht Treaty", "Lisbon Treaty", "Schengen Agreement"],
+                                 "correct": "Maastricht Treaty"
+                          },
+                          {
+                                 "question": "What is the term for a system where religious leaders hold political power?",
+                                 "options": ["Oligarchy", "Theocracy", "Autocracy", "Republic"],
+                                 "correct": "Theocracy"
+                          },
+                          {
+                                 "question": "Which political philosopher wrote *The Social Contract*, arguing that legitimate authority comes from the consent of the governed?",
+                                 "options": ["John Locke", "Thomas Hobbes", "Jean-Jacques Rousseau", "Montesquieu"],
+                                 "correct": "Jean-Jacques Rousseau"
+                          },
+                          {
+                                 "question": "What is the name of the legislative body in Japan?",
+                                 "options": ["Diet", "Knesset", "Bundestag", "Duma"],
+                                 "correct": "Diet"
+                          },
+                          {
+                                 "question": "Which concept refers to the ability of a state to govern itself without external interference?",
+                                 "options": ["Sovereignty", "Legitimacy", "Jurisdiction", "Autonomy"],
+                                 "correct": "Sovereignty"
+                          },
+                          {
+                                 "question": "Which international court handles disputes between states rather than individuals?",
+                                 "options": ["International Criminal Court", "European Court of Human Rights", "International Court of Justice", "Inter-American Court"],
+                                 "correct": "International Court of Justice"
+                          },
+                          {
+                                 "question": "What term describes a voting system where legislative seats are allocated based on the percentage of votes each party receives?",
+                                 "options": ["First-past-the-post", "Ranked-choice voting", "Proportional representation", "Mixed-member majoritarian"],
+                                 "correct": "Proportional representation"
+                          },
+                          {
+                                 "question": "Which political ideology emphasizes minimal state intervention, individual liberty, and free-market principles?",
+                                 "options": ["Libertarianism", "Progressivism", "Social Democracy", "Communitarianism"],
+                                 "correct": "Libertarianism"
+                          }                      
+                  ]
                 }
             },
             celebrities: {
