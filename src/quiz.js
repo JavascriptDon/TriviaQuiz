@@ -645,7 +645,7 @@ export const quizzes = {
                 correct: 'Athena'
             }
         ],
-         [
+        round2 : [
             {
                 question: 'In Greek mythology, who is the king of the underworld?',
                 options: ['Hades', 'Zeus', 'Ares', 'Cronus'],
