@@ -9,6 +9,20 @@ import clickSound from './sounds/mouse-click.mp3';
         let selectedQuiz = null;
         let totalRounds = 5;
 
+        function getSelectedQuizData() {
+            return quizzes[selectedQuiz];
+        }
+
+        function getRoundQuestionCount(roundNumber) {
+            const quiz = getSelectedQuizData();
+            return quiz.data[`round${roundNumber}`]?.length ?? 0;
+        }
+
+        function getQuizMaxScore() {
+            const quiz = getSelectedQuizData();
+            return Object.values(quiz.data).reduce((total, roundQuestions) => total + roundQuestions.length, 0);
+        }
+
         function initializeQuiz() {
             // Show quiz selection
             document.getElementById('quiz-selection').classList.remove('hidden');
@@ -18,7 +32,7 @@ import clickSound from './sounds/mouse-click.mp3';
         function startSelectedQuiz() {
             const selectElement = document.getElementById('quiz-type-select');
             selectedQuiz = selectElement.value;
-            const quiz = quizzes[selectedQuiz];
+            const quiz = getSelectedQuizData();
             totalRounds = quiz.rounds;
             
             // Update title
@@ -40,12 +54,12 @@ import clickSound from './sounds/mouse-click.mp3';
 
         function loadRound(roundNumber) {
             const roundKey = `round${roundNumber}`;
-            quizQuestions = shuffleArray([...quizzes[selectedQuiz].data[roundKey]]);
+            quizQuestions = shuffleArray([...getSelectedQuizData().data[roundKey]]);
             currentQuestionIndex = 0;
             // mark the score at the start of this round
             roundStartScore = totalScore;
             document.getElementById('current-round').textContent = roundNumber;
-            document.getElementById('total-questions').textContent = '10';
+            document.getElementById('total-questions').textContent = quizQuestions.length;
             displayQuestion();
         }
 
@@ -146,10 +160,11 @@ import clickSound from './sounds/mouse-click.mp3';
             document.getElementById('round-score').textContent = roundScore;
             const maxQuestions = quizQuestions.length;
             const roundPercent = Math.round((roundScore / maxQuestions) * 100);
+            document.getElementById('round-total').textContent = maxQuestions;
             
             document.getElementById('round-percentage').textContent = roundPercent + '%';
 
-            if (currentRound < 5) {
+            if (currentRound < totalRounds) {
                 document.getElementById('next-round-num').textContent = currentRound + 1;
             }
         }
@@ -210,9 +225,10 @@ import clickSound from './sounds/mouse-click.mp3';
             document.getElementById('round-complete-section').classList.add('hidden');
             document.getElementById('final-score-section').classList.remove('hidden');
 
-            const maxScore = totalRounds * 10;
+            const maxScore = getQuizMaxScore();
             const percentage = Math.round((totalScore / maxScore) * 100);
             document.getElementById('final-score').textContent = totalScore;
+            document.getElementById('final-total').textContent = maxScore;
             document.getElementById('final-percentage').textContent = `${percentage}%`;
 
             // Display round breakdown
@@ -221,6 +237,7 @@ import clickSound from './sounds/mouse-click.mp3';
                 if (i <= totalRounds) {
                     roundElement.parentElement.style.display = 'block';
                     roundElement.textContent = roundScores[i] || 0;
+                    document.getElementById(`final-round-total${i}`).textContent = getRoundQuestionCount(i);
                 } else {
                     roundElement.parentElement.style.display = 'none';
                 }
