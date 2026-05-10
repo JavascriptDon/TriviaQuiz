@@ -1,6 +1,18 @@
 {
   "includeCoAuthoredBy": false,
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"const d=JSON.parse(require('fs').readFileSync(0,'utf8'));const c=d.tool_input.command||'';const p=[/rm -rf/,/git push.*--force/,/git reset --hard/,/git clean -f/,/npm publish/,/dd if=/,/mkfs/,/curl.*\\|.*sh/,/wget.*\\|.*sh/];const m=p.find(r=>r.test(c));if(m){process.stderr.write('Blocked: '+c);process.exit(2)}\"",
+            "statusMessage": "Checking for dangerous commands..."
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit",
@@ -113,6 +125,7 @@
       "Bash(yarn:*)"
     ],
     "deny": [
+      "Write(./.env)",
       "Read(./.env)",
       "Read(./.env.*)",
       "Read(./.env.local)",
