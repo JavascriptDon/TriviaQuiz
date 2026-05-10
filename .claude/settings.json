@@ -13,11 +13,11 @@
         ]
       },
       {
-        "matcher": "Bash(git commit:*)",
+        "matcher": "Bash",
         "hooks": [
           {
             "type": "command",
-            "command": "node -e \"const {execSync}=require('child_process');const files=execSync('git diff --cached --name-only').toString().trim().split('\\n').filter(f=>/\\.(js|html|css)$/.test(f));let errors=[];files.forEach(f=>{try{if(f.endsWith('.js'))execSync('node --check '+f)}catch(e){errors.push(f+': '+e.message)}});if(errors.length){process.stderr.write('Syntax errors:\\n'+errors.join('\\n'));process.exit(2)}\"",
+            "command": "node -e \"const d=JSON.parse(require('fs').readFileSync(0,'utf8'));const cmd=d.tool_input.command||'';if(!cmd.includes('git commit'))process.exit(0);const {execSync}=require('child_process');const files=execSync('git diff --cached --name-only').toString().trim().split('\\n').filter(f=>/\\.js$/.test(f));const errors=[];files.forEach(f=>{try{execSync('node --check '+f)}catch(e){errors.push(f+': '+e.stderr.toString())}});if(errors.length){process.stderr.write('Syntax errors found:\\n'+errors.join('\\n'));process.exit(2)}\"",
             "statusMessage": "Checking syntax before commit..."
           }
         ]
