@@ -35,7 +35,7 @@ const check = (attempts = 0) => {
     .on("error", () => {
       if (attempts < 15) setTimeout(() => check(attempts + 1), 500);
       else done(2, "Preview server did not respond — commit blocked");
-    })
+    }
 };
 
 setTimeout(() => check(), 1000);
