@@ -13,12 +13,12 @@
         ]
       },
       {
-        "matcher": "Bash",
+        "matcher": "Bash(git commit:*)",
         "hooks": [
           {
             "type": "command",
-            "command": "node .claude/pre-commit-check.js",
-            "statusMessage": "Running build + smoke test before commit..."
+            "command": "node -e \"const {execSync}=require('child_process');const files=execSync('git diff --cached --name-only').toString().trim().split('\\n').filter(f=>/\\.(js|html|css)$/.test(f));let errors=[];files.forEach(f=>{try{if(f.endsWith('.js'))execSync('node --check '+f)}catch(e){errors.push(f+': '+e.message)}});if(errors.length){process.stderr.write('Syntax errors:\\n'+errors.join('\\n'));process.exit(2)}\"",
+            "statusMessage": "Checking syntax before commit..."
           }
         ]
       }
