@@ -1,4 +1,4 @@
-// draft-with-error.js
+// draft-with-error.js — testing syntax hook
 function greet(name) {
   console.log("Hello, " + name)
   return name
