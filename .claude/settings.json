@@ -17,8 +17,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node -e \"const d=JSON.parse(require('fs').readFileSync(0,'utf8'));const c=d.tool_input.command||'';if(/git commit/.test(c)){const r=require('child_process').spawnSync('npm',['run','build'],{stdio:'inherit',shell:true});if(r.status!==0){process.stderr.write('Build failed -- commit blocked\\n');process.exit(2)}}\"",
-            "statusMessage": "Running build check before commit..."
+            "command": "node .claude/pre-commit-check.js",
+            "statusMessage": "Running build + smoke test before commit..."
           }
         ]
       }
