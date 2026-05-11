@@ -4,7 +4,7 @@
 
 - Take a look at the existing [Issues](https://github.com/JavascriptDon/TriviaQuiz/issues) or [create a new issue](https://github.com/JavascriptDon/TriviaQuiz/issues/new)!
 - [Fork the Repo](https://github.com/JavascriptDon/TriviaQuiz/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
-- Create a **[Pull Request](https://github.com/JavascriptDon/TriviaQuiz/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
+- Create a **[Pull Request](https://github.com/JavascriptDon/TriviaQuiz/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.AA
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes proposed in your PR.
 
 ---
@@ -19,10 +19,10 @@
 git clone https://github.com/<your-github-username>/TriviaQuiz
 ```
 
-**3.** Navigate to the newly created GPT-5-Projects project directory:
+**3.** Navigate to the newly created TriviaQuiz project directory:
 
 ```bash
-cd GPT-5-Projects
+cd TriviaQuiz
 ```
 
 **4.** Set upstream command:
