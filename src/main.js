@@ -8,6 +8,7 @@ let roundScores = {};
 let quizQuestions = [];
 let selectedQuiz = null;
 let totalRounds = 5;
+let questionTimer = null;
 
 function getSelectedQuizData() {
   return quizzes[selectedQuiz];
@@ -20,10 +21,7 @@ function getRoundQuestionCount(roundNumber) {
 
 function getQuizMaxScore() {
   const quiz = getSelectedQuizData();
-  return Object.values(quiz.data).reduce(
-    (total, roundQuestions) => total + roundQuestions.length,
-    0,
-  );
+  return Object.values(quiz.data).reduce((total, roundQuestions) => total + roundQuestions.length, 0);
 }
 
 function initializeQuiz() {
@@ -75,11 +73,46 @@ function shuffleArray(array) {
   return shuffled;
 }
 
+function clearTimer() {
+  if (questionTimer) {
+    clearInterval(questionTimer);
+    questionTimer = null;
+  }
+}
+
+function updateTimerDisplay(timeLeft) {
+  document.getElementById("timer-count").textContent = timeLeft;
+  const el = document.getElementById("timer");
+  el.className = "timer";
+  if (timeLeft <= 5) el.classList.add("timer-danger");
+  else if (timeLeft <= 8) el.classList.add("timer-warning");
+}
+
+function startTimer(correctAnswer) {
+  clearTimer();
+  let timeLeft = 15;
+  updateTimerDisplay(timeLeft);
+  questionTimer = setInterval(() => {
+    timeLeft--;
+    updateTimerDisplay(timeLeft);
+    if (timeLeft <= 0) {
+      clearTimer();
+      disableAllButtons();
+      highlightCorrectAnswer(correctAnswer);
+      showFeedback(`Time's up! The correct answer is: ${correctAnswer}`, false);
+      setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizQuestions.length) displayQuestion();
+        else completeRound();
+      }, 2000);
+    }
+  }, 1000);
+}
+
 function displayQuestion() {
   const currentQuestion = quizQuestions[currentQuestionIndex];
   document.getElementById("question").textContent = currentQuestion.question;
-  document.getElementById("current-question").textContent =
-    currentQuestionIndex + 1;
+  document.getElementById("current-question").textContent = currentQuestionIndex + 1;
 
   const optionsContainer = document.getElementById("options-container");
   optionsContainer.innerHTML = "";
@@ -90,16 +123,17 @@ function displayQuestion() {
     const button = document.createElement("button");
     button.className = "option-btn";
     button.textContent = option;
-    button.onclick = () =>
-      selectAnswer(option, currentQuestion.correct, button);
+    button.onclick = () => selectAnswer(option, currentQuestion.correct, button);
     optionsContainer.appendChild(button);
   });
 
   updateProgressBar();
   clearFeedback();
+  startTimer(currentQuestion.correct);
 }
 
 function selectAnswer(selected, correct, buttonElement) {
+  clearTimer();
   disableAllButtons();
 
   const isCorrect = selected === correct;
@@ -140,9 +174,7 @@ function disableAllButtons() {
 
 function showFeedback(message, isCorrect) {
   const feedbackContainer = document.getElementById("feedback");
-  feedbackContainer.className = isCorrect
-    ? "feedback-message feedback-correct"
-    : "feedback-message feedback-incorrect";
+  feedbackContainer.className = isCorrect ? "feedback-message feedback-correct" : "feedback-message feedback-incorrect";
   feedbackContainer.innerHTML = `<span class="feedback-icon">${isCorrect ? "✓" : "✗"}</span>${message}`;
   feedbackContainer.classList.remove("hidden");
 }
@@ -205,9 +237,7 @@ function playSound() {
   }
 
   function attachListeners() {
-    const clickableButtons = document.querySelectorAll(
-      ".option-btn, .back-btn, .continue-btn, .restart-btn",
-    );
+    const clickableButtons = document.querySelectorAll(".option-btn, .back-btn, .continue-btn, .restart-btn");
 
     clickableButtons.forEach((btn) => {
       btn.removeEventListener("click", playClick);
@@ -243,8 +273,7 @@ function showFinalScore() {
     if (i <= totalRounds) {
       roundElement.parentElement.style.display = "block";
       roundElement.textContent = roundScores[i] || 0;
-      document.getElementById(`final-round-total${i}`).textContent =
-        getRoundQuestionCount(i);
+      document.getElementById(`final-round-total${i}`).textContent = getRoundQuestionCount(i);
     } else {
       roundElement.parentElement.style.display = "none";
     }
@@ -270,9 +299,7 @@ function showFinalScore() {
 initializeQuiz();
 playSound();
 // Add event listener for start button
-document
-  .getElementById("start-quiz-btn")
-  .addEventListener("click", startSelectedQuiz);
+document.getElementById("start-quiz-btn").addEventListener("click", startSelectedQuiz);
 
 // Expose functions globally for HTML onclick
 window.startNextRound = startNextRound;

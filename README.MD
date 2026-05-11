@@ -84,10 +84,10 @@ claude
 Add a new "Science" quiz with 3 rounds of 5 questions each about biology, chemistry, and physics.
 ```
 
-**Extend the UI**
+**Show a countdown timer per question**
 
 ```
-Add a progress bar below the question that fills as the user moves through the round.
+Add a 15-second countdown timer for each question. If time runs out, mark the answer as incorrect and move to the next question automatically.
 ```
 
 **Fix or improve behaviour**
