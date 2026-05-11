@@ -60,7 +60,44 @@ npm run build
 npm run preview
 ```
 
+## Your First Steps with Claude
+
+[Claude Code](https://claude.ai/code) is an AI coding assistant that understands this entire codebase. You can use it to add new quiz categories, fix bugs, or extend the UI — all by describing what you want in plain English.
+
+### Install Claude Code
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Then run it from this project directory:
+
+```bash
+claude
+```
+
+### Example prompts to try
+
+**Add a new quiz category**
+
+```
+Add a new "Science" quiz with 3 rounds of 5 questions each about biology, chemistry, and physics.
+```
+
+**Extend the UI**
+
+```
+Add a progress bar below the question that fills as the user moves through the round.
+```
+
+**Fix or improve behaviour**
+
+```
+The final score screen doesn't show which questions I got wrong. Can you add a review section?
+```
+
+Claude Code reads the codebase before suggesting changes, so it will follow the existing patterns in `src/quiz.js` and `src/main.js` automatically.
+
 ## Notes
 
 This project is meant for learning and prototyping. It uses Vite for fast local development and bundling.
-
