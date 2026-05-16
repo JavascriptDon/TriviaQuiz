@@ -73,7 +73,12 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - `npm run build` — production build to `dist/`
 - `npm run preview` — serve the built bundle
 
-There is no test suite, linter, or formatter configured.
+## Definition of Done
+ 
+There is no test suite, linter, or formatter configured. Before finishing any change:
+- `npm run build` exits with zero errors
+- No runtime errors in the browser console
+- Affected flow manually verified end-to-end
 
 ## Architecture
 
