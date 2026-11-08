@@ -1095,7 +1095,7 @@ export const quizzes = {
             },
             celebrities: {
                 title: '⭐ Celebrities Quiz',
-                rounds: 1,
+                rounds: 3,
                 data: {
                     round1: [
                         {
@@ -1148,7 +1148,111 @@ export const quizzes = {
                             options: ['Jamie Oliver', 'Gordon Ramsay', 'Wolfgang Puck', 'Anthony Bourdain'],
                             correct: 'Gordon Ramsay'
                         }
-                    ]
+                    ],
+                   round2: [
+                              {
+                                  question: 'Which actor played Jack Sparrow in Pirates of the Caribbean?',
+                                  options: ['Orlando Bloom', 'Johnny Depp', 'Hugh Jackman', 'Ben Affleck'],
+                                  correct: 'Johnny Depp'
+                              },
+                              {
+                                  question: 'Who released the song “Bad Guy” in 2019?',
+                                  options: ['Dua Lipa', 'Billie Eilish', 'Halsey', 'Olivia Rodrigo'],
+                                  correct: 'Billie Eilish'
+                              },
+                              {
+                                  question: 'Which actor played Neo in The Matrix?',
+                                  options: ['Will Smith', 'Keanu Reeves', 'Nicolas Cage', 'Brad Pitt'],
+                                  correct: 'Keanu Reeves'
+                              },
+                              {
+                                  question: 'Which singer is known as the “Queen of Pop”?',
+                                  options: ['Madonna', 'Britney Spears', 'Rihanna', 'Beyoncé'],
+                                  correct: 'Madonna'
+                              },
+                              {
+                                  question: 'Who directed Jurassic Park?',
+                                  options: ['James Cameron', 'George Lucas', 'Steven Spielberg', 'Ridley Scott'],
+                                  correct: 'Steven Spielberg'
+                              },
+                              {
+                                  question: 'Which actress played Katniss Everdeen in The Hunger Games?',
+                                  options: ['Emma Stone', 'Jennifer Lawrence', 'Shailene Woodley', 'Kristen Stewart'],
+                                  correct: 'Jennifer Lawrence'
+                              },
+                              {
+                                  question: 'Which band released “Bohemian Rhapsody”?',
+                                  options: ['The Beatles', 'Queen', 'Led Zeppelin', 'The Rolling Stones'],
+                                  correct: 'Queen'
+                              },
+                              {
+                                  question: 'Which actor played Sherlock Holmes in the BBC series?',
+                                  options: ['Martin Freeman', 'Benedict Cumberbatch', 'Idris Elba', 'Tom Hiddleston'],
+                                  correct: 'Benedict Cumberbatch'
+                              },
+                              {
+                                  question: 'Which actor played Ross in Friends?',
+                                  options: ['Matthew Perry', 'David Schwimmer', 'Matt LeBlanc', 'Paul Rudd'],
+                                  correct: 'David Schwimmer'
+                              },
+                              {
+                                  question: 'Which rapper’s real name is Shawn Carter?',
+                                  options: ['Kanye West', 'Jay-Z', 'Drake', 'Eminem'],
+                                  correct: 'Jay-Z'
+                              }
+                          ],
+                          round3: [
+                              {
+                                  question: 'Which actor played Forrest Gump?',
+                                  options: ['Tom Hanks', 'Brad Pitt', 'Matt Damon', 'Kevin Costner'],
+                                  correct: 'Tom Hanks'
+                              },
+                              {
+                                  question: 'Who sang “Rolling in the Deep”?',
+                                  options: ['Adele', 'Amy Winehouse', 'Duffy', 'Lorde'],
+                                  correct: 'Adele'
+                              },
+                              {
+                                  question: 'Which actress played Rachel Green in Friends?',
+                                  options: ['Courteney Cox', 'Jennifer Aniston', 'Lisa Kudrow', 'Sarah Jessica Parker'],
+                                  correct: 'Jennifer Aniston'
+                              },
+                              {
+                                  question: 'Which actor played the Joker in The Dark Knight?',
+                                  options: ['Jack Nicholson', 'Joaquin Phoenix', 'Heath Ledger', 'Jared Leto'],
+                                  correct: 'Heath Ledger'
+                              },
+                              {
+                                  question: 'Which singer released the album “Future Nostalgia” in 2020?',
+                                  options: ['Dua Lipa', 'Ariana Grande', 'Sia', 'Charli XCX'],
+                                  correct: 'Dua Lipa'
+                              },
+                              {
+                                  question: 'Who directed Titanic?',
+                                  options: ['Ridley Scott', 'James Cameron', 'Peter Jackson', 'Christopher Nolan'],
+                                  correct: 'James Cameron'
+                              },
+                              {
+                                  question: 'Which actor plays Ethan Hunt in Mission: Impossible?',
+                                  options: ['Tom Cruise', 'Tom Hardy', 'Ben Affleck', 'Henry Cavill'],
+                                  correct: 'Tom Cruise'
+                              },
+                              {
+                                  question: 'Which singer is known as “The Boss”?',
+                                  options: ['Bruce Springsteen', 'Billy Joel', 'Bon Jovi', 'John Mellencamp'],
+                                  correct: 'Bruce Springsteen'
+                              },
+                              {
+                                  question: 'Which actor played Dr. Ian Malcolm in Jurassic Park?',
+                                  options: ['Sam Neill', 'Jeff Goldblum', 'Richard Attenborough', 'Laura Dern'],
+                                  correct: 'Jeff Goldblum'
+                              },
+                              {
+                                  question: 'Which Kardashian sister is the eldest?',
+                                  options: ['Kim', 'Kourtney', 'Khloé', 'Kendall'],
+                                  correct: 'Kourtney'
+                              }
+                          ],
                 }
             },
             animals: {
